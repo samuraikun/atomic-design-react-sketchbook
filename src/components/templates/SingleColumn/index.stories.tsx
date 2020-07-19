@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import { style } from 'typestyle';
 import SingleColumn from './index';
 
 export default {
@@ -7,21 +7,28 @@ export default {
   component: SingleColumn
 }
 
+const headerStyle = style({
+  display: 'flex',
+  justifyContent: 'center'
+})
+
+const mainStyle = style({
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center'
+})
+
 const Header = () => (
-  <StyleHeader>Header</StyleHeader>
+  <div className={headerStyle}>Header</div>
 );
-const StyleHeader = styled.header`
-  display: flex;
-  justify-content: center;
-`;
 
 const Main = () => (
-  <MainStyle>Main</MainStyle>
+  <div className={mainStyle}>Main</div>
 );
-const MainStyle = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`
 
-export const Default = () => <SingleColumn renderHeader={Header} renderMain={Main} />
+export const Default = () => (
+  <SingleColumn
+    renderHeader={Header}
+    renderMain={Main}
+  />
+)
