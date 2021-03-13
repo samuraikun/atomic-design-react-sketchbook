@@ -1,6 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
 import Card from './index';
+import { style } from 'typestyle';
 
 export default {
   title: 'Atom/Card',
@@ -15,15 +15,16 @@ export const Default = () => (
 
 export const WithContent = () => (
   <Card>
-    <ContentStyle>
+    <div className={contentStyle}>
       <p>CardTitle</p>
       <img src="https://cdn.pixabay.com/photo/2015/03/26/10/38/blue-691718_1280.jpg" alt="sample" width='200' height='100' />
-    </ContentStyle>
+    </div>
   </Card>
 )
-const ContentStyle = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-`;
+
+const contentStyle = style({
+  display: 'flex',
+  justifyContent: 'center',
+  flexDirection: 'column'
+})
 

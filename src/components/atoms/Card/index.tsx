@@ -1,14 +1,16 @@
 import React from 'react';
-import styled from 'styled-components';
+import { style } from 'typestyle';
+import { colors } from '../../../utils/colors'
 
 const Card: React.FC = ({ children }) => (
-  <CardStyle>{children}</CardStyle>
+  <div className={cardStyle}>{children}</div>
 );
-const CardStyle = styled.div`
-  padding: 60px;
-  background: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
-`;
+
+const cardStyle = style({
+  padding: 60,
+  background: colors.monoC,
+  borderRadius: 8,
+  boxShadow: '0 1px 1px 0 rgba(0, 0, 0, 0.1)'
+})
 
 export default Card;

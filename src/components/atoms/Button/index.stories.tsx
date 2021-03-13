@@ -7,4 +7,11 @@ export default {
   component: Button
 }
 
-export const Default = () => <Button title='Button' onClick={action('clicked!')} />
+export const Default = () => (
+  <Button
+    title='Button'
+    color='primary'
+    size='medium'
+    onClick={action('clicked!')}
+  />
+)
