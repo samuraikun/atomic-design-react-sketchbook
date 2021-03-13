@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Meta } from '@storybook/react';
 import { withKnobs, text, boolean, select } from "@storybook/addon-knobs";
 import Input from './index';
 
@@ -6,9 +7,9 @@ export default {
   title: 'Atom/Input',
   decorators: [withKnobs],
   component: Input
-}
+} as Meta
 
-export const Default = () => {
+export const Default: React.VFC<{}> = () => {
   const [value, setValue] = useState<string | number>('');
 
   return (

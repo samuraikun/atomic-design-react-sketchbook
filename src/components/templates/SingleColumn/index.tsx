@@ -1,4 +1,4 @@
-import React, { FC, ReactNode } from 'react';
+import React, { VFC, ReactNode } from 'react';
 import { style, media } from 'typestyle';
 
 interface SingleColumnI {
@@ -6,7 +6,7 @@ interface SingleColumnI {
   renderMain(): ReactNode;
 }
 
-const SingleColumn: FC<SingleColumnI> = ({ renderHeader, renderMain }) => (
+const SingleColumn: VFC<SingleColumnI> = ({ renderHeader, renderMain }) => (
   <div className={singleColumStyle}>
     <div className={singleColumnHeader}>{renderHeader()}</div>
     <div className={singleColumnMain}>{renderMain()}</div>

@@ -3,13 +3,13 @@ import styled from 'styled-components';
 
 type Props = {
   renderSidebar(): JSX.Element;
-  rendeerMain(): JSX.Element;
+  renderMain(): JSX.Element;
 }
 
-const DashboardLayout: React.FC<Props> = ({ renderSidebar, rendeerMain }) => (
+const DashboardLayout: React.FC<Props> = ({ renderSidebar, renderMain }) => (
   <DashboardLayoutContainer>
     <DashboardLayoutSidebar>{renderSidebar()}</DashboardLayoutSidebar>
-    <DashboardLayoutMain>{rendeerMain()}</DashboardLayoutMain>
+    <DashboardLayoutMain>{renderMain()}</DashboardLayoutMain>
   </DashboardLayoutContainer>
 );
 

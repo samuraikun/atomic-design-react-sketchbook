@@ -8,13 +8,13 @@ export default {
   component: Card
 } as Meta
 
-export const Default = () => (
+export const Default: React.VFC<{}> = () => (
   <Card>
     <div>Card</div>
   </Card>
 )
 
-export const WithContent = () => (
+export const WithContent: React.VFC<{}> = () => (
   <Card>
     <div className={contentStyle}>
       <p>CardTitle</p>
