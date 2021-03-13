@@ -1,11 +1,12 @@
 import React from 'react';
+import { Meta } from '@storybook/react'
 import { style } from 'typestyle';
 import SingleColumn from './index';
 
 export default {
   title: 'Template/SingleColumn',
   component: SingleColumn
-}
+} as Meta
 
 const headerStyle = style({
   display: 'flex',

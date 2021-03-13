@@ -1,10 +1,11 @@
 import React from 'react';
+import { Meta } from '@storybook/react'
 import styled from 'styled-components';
 import { Headline, Title, Body } from './index';
 
 export default {
   title: 'Atom/Typography'
-}
+} as Meta
 
 export const Typographies = () => {
   return (

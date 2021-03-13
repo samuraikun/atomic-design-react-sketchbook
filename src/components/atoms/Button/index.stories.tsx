@@ -8,7 +8,7 @@ export default {
   component: Button
 } as Meta
 
-export const Default = () => (
+export const Default: React.VFC<{}> = () => (
   <Button
     title='Button'
     color='primary'

@@ -13,7 +13,7 @@ Demo: https://atomic-design-react-sketchbook-git-master.samuraikun.vercel.app/
 - [Vercel](https://vercel.com/): For Automatic Deployment of the demo.
 
 ## React version
-- v16.13.1
+- v17.0.1
 
 ## Storybook version
-- 5.3.19
+- 6.1.21

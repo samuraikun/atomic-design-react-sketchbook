@@ -1,16 +1,17 @@
 import React from 'react';
+import { Meta } from '@storybook/react'
 import styled from 'styled-components';
 import DashboardLayout from './index';
 
 export default {
   title: 'Template/DashboardLayout',
   component: DashboardLayout
-}
+} as Meta
 
-export const Dashboard = () => (
+export const Dashboard: React.VFC<{}> = () => (
   <DashboardLayout
     renderSidebar={Sidebar}
-    rendeerMain={Main}
+    renderMain={Main}
   />
 );
 
