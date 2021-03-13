@@ -2,22 +2,6 @@
   "name": "atomic-design-react-sketchbook",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "@types/jest": "^24.0.0",
-    "@types/node": "^12.0.0",
-    "@types/react": "^16.9.0",
-    "@types/react-dom": "^16.9.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
-    "styled-components": "^5.1.1",
-    "styled-media-query": "^2.1.2",
-    "typescript": "~3.7.2",
-    "typestyle": "^2.1.0"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -41,6 +25,12 @@
       "last 1 safari version"
     ]
   },
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "styled-components": "^5.1.1",
+    "styled-media-query": "^2.1.2"
+  },
   "devDependencies": {
     "@storybook/addon-actions": "^6.1.21",
     "@storybook/addon-knobs": "^6.1.21",
@@ -50,6 +40,16 @@
     "@storybook/addons": "^6.1.21",
     "@storybook/preset-create-react-app": "^3.1.7",
     "@storybook/react": "^6.1.21",
-    "@types/styled-components": "^5.1.0"
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/user-event": "^12.8.3",
+    "@types/styled-components": "^5.1.8",
+    "@types/jest": "^26.0.20",
+    "@types/node": "^14.14.34",
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.2",
+    "typescript": "4.2.3",
+    "typestyle": "^2.1.0",
+    "react-scripts": "^3.4.4"
   }
 }

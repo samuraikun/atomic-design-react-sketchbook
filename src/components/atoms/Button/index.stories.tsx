@@ -1,11 +1,12 @@
 import React from 'react'
+import { Meta } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import Button from './index'
 
 export default {
   title: 'Atom/Button',
   component: Button
-}
+} as Meta
 
 export const Default = () => (
   <Button

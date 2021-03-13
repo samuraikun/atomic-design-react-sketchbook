@@ -1,11 +1,12 @@
-import React from 'react';
-import Card from './index';
-import { style } from 'typestyle';
+import React from 'react'
+import { Meta } from '@storybook/react'
+import { style } from 'typestyle'
+import Card from './index'
 
 export default {
   title: 'Atom/Card',
   component: Card
-}
+} as Meta
 
 export const Default = () => (
   <Card>
